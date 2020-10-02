@@ -1,0 +1,39 @@
+{
+  "name": "nextjs-redux-mysql-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "bcrypt": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "next": "^9.5.3",
+    "next-redux-wrapper": "^6.0.2",
+    "nodemailer": "^6.4.11",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "serverless-mysql": "^1.5.4",
+    "sql-template-strings": "^2.2.2",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vonlabs/nextjs-redux-mysql-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vonlabs/nextjs-redux-mysql-boilerplate/issues"
+  },
+  "homepage": "https://github.com/vonlabs/nextjs-redux-mysql-boilerplate#readme"
+}

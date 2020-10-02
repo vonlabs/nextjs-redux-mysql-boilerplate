@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch JS",
+            "program": "${file}",
+            "envFile": "${workspaceFolder}/.env",
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Next: Chrome",
+            "url": "http://localhost:4000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Next: Node WIN",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/next/dist/bin/next",
+            "runtimeArgs": [
+ //               "--inspect",
+                "-p", 
+                "4000"
+            ],
+            "port": 9229,
+            "env": {
+                "NODE_OPTIONS": "--inspect"
+            },
+            "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM",
+            "runtimeExecutable": "${workspaceFolder}\\node_modules\\.bin\\next",
+            "port": 9229,
+            "env": {
+              "NODE_OPTIONS": "--inspect"
+            }
+          },
+
+
+
+    ],
+    "compounds": [
+        {
+            "name": "Next: Full",
+            "configurations": ["Next: Node", "Next: Chrome"]
+        }
+    ]
+}
